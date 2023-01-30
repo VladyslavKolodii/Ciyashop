@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewVC">
+            <connections>
+                <outlet property="btnBack" destination="H42-L8-bWd" id="ZyX-jc-Joz"/>
+                <outlet property="imgHeaderImage" destination="0jT-H4-3GY" id="Ja7-NH-Qo3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwAllData" destination="KFo-Nf-fRK" id="2hW-iC-JgB"/>
+                <outlet property="vwHeader" destination="AZy-zP-hQT" id="0fM-Xj-KZS"/>
+                <outlet property="webview" destination="aCh-eo-bOX" id="iLq-nQ-WSi"/>
+                <outlet property="wkWebView" destination="vNc-sY-QI3" id="7Oa-zx-Fjv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFo-Nf-fRK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZy-zP-hQT">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeaderOther" translatesAutoresizingMaskIntoConstraints="NO" id="7wR-qq-ySE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H42-L8-bWd">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="Q0k-nA-Yh4"/>
+                                        <constraint firstAttribute="height" constant="42" id="ZzJ-hX-Fqv"/>
+                                    </constraints>
+                                    <state key="normal" image="BackArrow"/>
+                                    <connections>
+                                        <action selector="btnBackClicked:" destination="-1" eventType="touchUpInside" id="9zt-Re-rLD"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeaderClickShop" translatesAutoresizingMaskIntoConstraints="NO" id="0jT-H4-3GY">
+                                    <rect key="frame" x="149" y="8" width="78" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gJ-SZ-yrm">
+                                    <rect key="frame" x="295" y="4" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="IconSearch"/>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owc-IM-lel">
+                                    <rect key="frame" x="335" y="4" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="IconNotification"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="05d-ZB-YzW"/>
+                                <constraint firstItem="H42-L8-bWd" firstAttribute="leading" secondItem="AZy-zP-hQT" secondAttribute="leading" id="LuQ-Ay-2xX"/>
+                                <constraint firstItem="H42-L8-bWd" firstAttribute="top" secondItem="AZy-zP-hQT" secondAttribute="top" id="m3J-BN-0uY"/>
+                            </constraints>
+                        </view>
+                        <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCh-eo-bOX">
+                            <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </webView>
+                        <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNc-sY-QI3">
+                            <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <wkWebViewConfiguration key="configuration">
+                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                <wkPreferences key="preferences"/>
+                            </wkWebViewConfiguration>
+                        </wkWebView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="AZy-zP-hQT" firstAttribute="top" secondItem="KFo-Nf-fRK" secondAttribute="top" id="H1m-C4-Qge"/>
+                        <constraint firstAttribute="trailing" secondItem="AZy-zP-hQT" secondAttribute="trailing" id="e1Q-Jq-hIV"/>
+                        <constraint firstItem="AZy-zP-hQT" firstAttribute="leading" secondItem="KFo-Nf-fRK" secondAttribute="leading" id="kWW-nN-KRB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KFo-Nf-fRK" secondAttribute="bottom" id="0BV-sG-YMw"/>
+                <constraint firstItem="KFo-Nf-fRK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Riq-sb-cy2"/>
+                <constraint firstAttribute="trailing" secondItem="KFo-Nf-fRK" secondAttribute="trailing" id="cAq-rk-JTq"/>
+                <constraint firstItem="KFo-Nf-fRK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mDX-zv-vqZ"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackArrow" width="19" height="12.5"/>
+        <image name="HeaderClickShop" width="82" height="25.5"/>
+        <image name="HeaderOther" width="375" height="42.5"/>
+        <image name="IconNotification" width="15.5" height="17.5"/>
+        <image name="IconSearch" width="18.5" height="18.5"/>
+    </resources>
+</document>

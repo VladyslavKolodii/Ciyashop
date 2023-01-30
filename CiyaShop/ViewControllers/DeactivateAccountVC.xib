@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Light.ttf">
+            <string>Ubuntu-Light</string>
+        </array>
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeactivateAccountVC">
+            <connections>
+                <outlet property="btnBack" destination="CaL-Pp-vGs" id="Emb-G5-GYB"/>
+                <outlet property="btnConfirmDeactivation" destination="5hR-HH-9X2" id="Hvc-RA-f7j"/>
+                <outlet property="lblDeactivateAccount" destination="Zwc-2h-21d" id="X5j-MV-PQp"/>
+                <outlet property="lblEmailId" destination="0Ds-Fd-7q4" id="eSU-hT-UdO"/>
+                <outlet property="lblMobileNumber" destination="hx1-XE-CBx" id="g8I-vj-f47"/>
+                <outlet property="lblPassword" destination="Utv-6X-rmt" id="Scg-dK-sEn"/>
+                <outlet property="lblTitle" destination="zVK-2Z-fTh" id="sCH-4u-jqg"/>
+                <outlet property="txtEmailId" destination="o29-EU-h0O" id="ZQd-yc-unB"/>
+                <outlet property="txtEnterYourPass" destination="8Jy-3S-Q34" id="aYU-N1-w2B"/>
+                <outlet property="txtMobileNumber" destination="Y1N-8A-rcE" id="2dG-La-r35"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwAllData" destination="MNz-po-gAC" id="MgH-bJ-99c"/>
+                <outlet property="vwHeader" destination="II2-QZ-Dex" id="jWR-bn-T1u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNz-po-gAC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="II2-QZ-Dex">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeaderOther" translatesAutoresizingMaskIntoConstraints="NO" id="KaU-x1-t8h">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVK-2Z-fTh">
+                                    <rect key="frame" x="43" y="8" width="288" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaL-Pp-vGs">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="ZRx-km-Jgp"/>
+                                        <constraint firstAttribute="width" constant="50" id="wX8-cv-bwJ"/>
+                                    </constraints>
+                                    <state key="normal" image="BackArrow"/>
+                                    <connections>
+                                        <action selector="btnBackClicked:" destination="-1" eventType="touchUpInside" id="qPJ-6P-4G6"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="CaL-Pp-vGs" firstAttribute="top" secondItem="II2-QZ-Dex" secondAttribute="top" id="CCm-kb-IWz"/>
+                                <constraint firstAttribute="height" constant="42" id="hYL-WU-EYc"/>
+                                <constraint firstItem="CaL-Pp-vGs" firstAttribute="leading" secondItem="II2-QZ-Dex" secondAttribute="leading" id="lks-2F-QTi"/>
+                            </constraints>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctt-7E-o7p" customClass="TPKeyboardAvoidingScrollView">
+                            <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hm-gl-dXe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="625"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-ck-hjm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="625"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deactivate Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwc-2h-21d">
+                                                    <rect key="frame" x="30" y="25" width="315" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ds-Fd-7q4">
+                                                    <rect key="frame" x="30" y="58" width="315" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="elisabeth_bashirian@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o29-EU-h0O">
+                                                    <rect key="frame" x="30" y="81" width="316" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                </textField>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MyOrderDevider" translatesAutoresizingMaskIntoConstraints="NO" id="6l7-dx-L2c">
+                                                    <rect key="frame" x="0.0" y="122" width="375" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx1-XE-CBx">
+                                                    <rect key="frame" x="30" y="157" width="315" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="021 9876 54321" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1N-8A-rcE">
+                                                    <rect key="frame" x="30" y="182" width="315" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utv-6X-rmt">
+                                                    <rect key="frame" x="30" y="157" width="315" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Jy-3S-Q34">
+                                                    <rect key="frame" x="30" y="177" width="315" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fe1-Bu-u9E">
+                                                    <rect key="frame" x="15" y="549" width="346" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hR-HH-9X2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="346" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="15"/>
+                                                            <state key="normal" title="CONFIRM DEACTIVATION">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="btnConfirmDeactivationClicked:" destination="-1" eventType="touchUpInside" id="sD5-Ta-D30"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="1hm-gl-dXe" secondAttribute="trailing" id="IV0-fl-DzQ"/>
+                                <constraint firstItem="1hm-gl-dXe" firstAttribute="width" secondItem="Ctt-7E-o7p" secondAttribute="width" id="M2f-uU-ugh"/>
+                                <constraint firstItem="1hm-gl-dXe" firstAttribute="height" secondItem="Ctt-7E-o7p" secondAttribute="height" id="Szc-hU-czX"/>
+                                <constraint firstAttribute="bottom" secondItem="1hm-gl-dXe" secondAttribute="bottom" id="lBh-so-WMf"/>
+                                <constraint firstItem="1hm-gl-dXe" firstAttribute="top" secondItem="Ctt-7E-o7p" secondAttribute="top" id="qcn-Zb-EOi"/>
+                                <constraint firstItem="1hm-gl-dXe" firstAttribute="leading" secondItem="Ctt-7E-o7p" secondAttribute="leading" id="trK-L3-Ybk"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="II2-QZ-Dex" secondAttribute="trailing" id="DWl-1e-RTF"/>
+                        <constraint firstItem="II2-QZ-Dex" firstAttribute="leading" secondItem="MNz-po-gAC" secondAttribute="leading" id="GsA-l4-gaN"/>
+                        <constraint firstItem="II2-QZ-Dex" firstAttribute="top" secondItem="MNz-po-gAC" secondAttribute="top" id="W2n-yq-Z6p"/>
+                        <constraint firstItem="Ctt-7E-o7p" firstAttribute="top" secondItem="II2-QZ-Dex" secondAttribute="bottom" id="lL2-dZ-7D1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ctt-7E-o7p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0bK-Wp-T4c"/>
+                <constraint firstAttribute="trailing" secondItem="MNz-po-gAC" secondAttribute="trailing" id="1LE-uz-DsB"/>
+                <constraint firstItem="MNz-po-gAC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Mj-zR-ogh"/>
+                <constraint firstItem="MNz-po-gAC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Csu-pz-vuQ"/>
+                <constraint firstAttribute="bottom" secondItem="Ctt-7E-o7p" secondAttribute="bottom" id="TaC-fm-NbD"/>
+                <constraint firstAttribute="bottom" secondItem="MNz-po-gAC" secondAttribute="bottom" id="VPV-kU-QKQ"/>
+                <constraint firstAttribute="trailing" secondItem="Ctt-7E-o7p" secondAttribute="trailing" id="oZG-kc-UqY"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="80.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackArrow" width="19" height="12.5"/>
+        <image name="HeaderOther" width="375" height="42.5"/>
+        <image name="MyOrderDevider" width="375" height="1"/>
+    </resources>
+</document>

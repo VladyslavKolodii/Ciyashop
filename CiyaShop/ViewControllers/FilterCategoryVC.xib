@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterCategoryVC">
+            <connections>
+                <outlet property="btnBack" destination="tIx-YX-Cz2" id="a6Z-zn-t8r"/>
+                <outlet property="lblTitle" destination="x1l-zg-2Au" id="GJz-Hq-hVE"/>
+                <outlet property="tblData" destination="RjJ-5f-46Q" id="T2F-D7-RIz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwAllData" destination="xt7-4J-YZH" id="6zK-ls-X8V"/>
+                <outlet property="vwHeader" destination="lS5-Tk-Zgl" id="vID-eV-kis"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-4J-YZH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lS5-Tk-Zgl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeaderOther" translatesAutoresizingMaskIntoConstraints="NO" id="YAa-T4-5RP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1l-zg-2Au">
+                                    <rect key="frame" x="50" y="8" width="277" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIx-YX-Cz2">
+                                    <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="7uY-Rm-haO"/>
+                                        <constraint firstAttribute="width" constant="42" id="tBI-sQ-xj0"/>
+                                    </constraints>
+                                    <state key="normal" image="BackArrow"/>
+                                    <connections>
+                                        <action selector="btnBackClicked:" destination="-1" eventType="touchUpInside" id="Brq-tT-8CE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="tIx-YX-Cz2" firstAttribute="leading" secondItem="lS5-Tk-Zgl" secondAttribute="leading" id="41c-ao-jTm"/>
+                                <constraint firstItem="tIx-YX-Cz2" firstAttribute="top" secondItem="lS5-Tk-Zgl" secondAttribute="top" id="pLm-Sm-HdJ"/>
+                                <constraint firstAttribute="height" constant="42" id="t22-eg-j0n"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RjJ-5f-46Q">
+                            <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="eDU-j5-yRP"/>
+                                <outlet property="delegate" destination="-1" id="lEi-dT-OoN"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lS5-Tk-Zgl" firstAttribute="top" secondItem="xt7-4J-YZH" secondAttribute="top" id="9Ja-pu-x6O"/>
+                        <constraint firstAttribute="trailing" secondItem="lS5-Tk-Zgl" secondAttribute="trailing" id="Isc-tf-0OL"/>
+                        <constraint firstItem="lS5-Tk-Zgl" firstAttribute="leading" secondItem="xt7-4J-YZH" secondAttribute="leading" id="qtJ-jI-Q1s"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xt7-4J-YZH" secondAttribute="bottom" id="175-Je-nw7"/>
+                <constraint firstAttribute="trailing" secondItem="xt7-4J-YZH" secondAttribute="trailing" id="STk-EX-5CH"/>
+                <constraint firstItem="xt7-4J-YZH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="W7r-sO-2cP"/>
+                <constraint firstItem="xt7-4J-YZH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iTP-KU-Mix"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackArrow" width="19" height="12"/>
+        <image name="HeaderOther" width="375" height="42"/>
+    </resources>
+</document>

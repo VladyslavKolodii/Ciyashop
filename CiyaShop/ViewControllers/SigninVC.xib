@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninVC">
+            <connections>
+                <outlet property="btnBack" destination="CLg-nQ-xbg" id="nMH-RO-jav"/>
+                <outlet property="btnBackPopup" destination="xmE-fi-RBT" id="Kuv-aV-JfD"/>
+                <outlet property="btnForgetPassword" destination="Kxo-LP-kDE" id="8EE-Fs-msq"/>
+                <outlet property="btnNewUser" destination="ca2-2w-NhU" id="yYh-iV-SMm"/>
+                <outlet property="btnRequestPass" destination="3zo-kE-oaY" id="bfl-mM-rjx"/>
+                <outlet property="btnSetNewPass" destination="aYl-kT-Ylk" id="aqE-QR-6tv"/>
+                <outlet property="btnSignIn" destination="tgW-Cz-GGk" id="jfi-xd-meG"/>
+                <outlet property="imgDevider1" destination="EeR-t0-41b" id="psK-1N-gpN"/>
+                <outlet property="imgDevider2" destination="51p-wx-xHd" id="6Fq-Vc-PYq"/>
+                <outlet property="imgDevider3" destination="GqU-11-rQ7" id="i1g-DT-PJR"/>
+                <outlet property="imgDeviderConfirmPass" destination="HLM-KI-u7Z" id="kHr-8u-zim"/>
+                <outlet property="imgDeviderPass" destination="MqZ-nT-wZA" id="T8n-8g-jQV"/>
+                <outlet property="imgHeaderImage" destination="J18-E5-HVk" id="RZG-XP-mn5"/>
+                <outlet property="imgMail" destination="EFF-0C-xyE" id="Tvl-xG-dbr"/>
+                <outlet property="imgPass" destination="xv8-sH-0O5" id="EgY-ok-t2K"/>
+                <outlet property="imgUserName" destination="egs-mj-t1O" id="Clr-kC-gql"/>
+                <outlet property="lblDescriptionPass" destination="6iF-a3-WiJ" id="Icx-vA-Aeu"/>
+                <outlet property="lblEnterNewPass" destination="jQd-KM-Qga" id="kbj-ez-ElK"/>
+                <outlet property="lblFacebook" destination="v26-Je-3tb" id="sHU-Bt-3fY"/>
+                <outlet property="lblGooglePlus" destination="YpM-VD-ort" id="vK1-ds-fEa"/>
+                <outlet property="lblOrSignUpWith" destination="ocz-I1-cAO" id="QDW-TS-sCa"/>
+                <outlet property="lblResetPassDescription" destination="iVx-KB-caa" id="NqH-HJ-ebf"/>
+                <outlet property="lblResetYourWord" destination="Qhf-Sp-12D" id="qvf-Eg-40j"/>
+                <outlet property="lblResetYourWordPass" destination="IrA-c4-X5v" id="irq-Ul-cAb"/>
+                <outlet property="txtConfirmNewPassword" destination="pBr-lN-Ga4" id="l3l-G3-dYA"/>
+                <outlet property="txtEmail" destination="dqH-cD-oiG" id="uXE-6w-oiC"/>
+                <outlet property="txtNewPassword" destination="SAy-WM-iPr" id="EZc-Jp-kMV"/>
+                <outlet property="txtPassword" destination="lMg-Rq-53C" id="yiK-fR-1tD"/>
+                <outlet property="txtPin" destination="Xkf-se-5oU" id="tMP-xP-vON"/>
+                <outlet property="txtUserName" destination="38i-fj-MWx" id="UO3-Oh-Jon"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwAllData" destination="7fG-bJ-Uw4" id="uF5-fS-HNh"/>
+                <outlet property="vwContent" destination="yOB-7o-iMx" id="L98-mI-s7u"/>
+                <outlet property="vwPopUp" destination="pe3-ZR-RBg" id="FSn-Fd-obS"/>
+                <outlet property="vwPopUpBG" destination="XLl-qz-QhU" id="gz8-nP-cLh"/>
+                <outlet property="vwPopUpPass" destination="wlw-AO-b7Z" id="CSs-FR-kDc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fG-bJ-Uw4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yP-Sr-h3m" customClass="TPKeyboardAvoidingScrollView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fB1-Jx-ryq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplashBG" translatesAutoresizingMaskIntoConstraints="NO" id="avf-I8-7Qx">
+                                            <rect key="frame" x="0.0" y="-1" width="375" height="668"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-3C-5d5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLg-nQ-xbg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="P0d-gw-SGR"/>
+                                                        <constraint firstAttribute="height" constant="42" id="nfi-8r-EvD"/>
+                                                    </constraints>
+                                                    <state key="normal" image="BackArrow"/>
+                                                    <connections>
+                                                        <action selector="btnBackClicked:" destination="-1" eventType="touchUpInside" id="hgR-Jn-1cM"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgLogoCiyaShop" translatesAutoresizingMaskIntoConstraints="NO" id="J18-E5-HVk">
+                                                    <rect key="frame" x="67" y="75" width="240" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOB-7o-iMx">
+                                                    <rect key="frame" x="40" y="214" width="295" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UsernameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="egs-mj-t1O">
+                                                            <rect key="frame" x="0.0" y="19" width="16" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </imageView>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username or Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38i-fj-MWx">
+                                                            <rect key="frame" x="45" y="15" width="250" height="24"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                        </textField>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="EeR-t0-41b">
+                                                            <rect key="frame" x="45" y="47" width="250" height="2"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PasswordLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xv8-sH-0O5">
+                                                            <rect key="frame" x="0.0" y="75" width="16" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </imageView>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMg-Rq-53C">
+                                                            <rect key="frame" x="45" y="71" width="250" height="24"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        </textField>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="51p-wx-xHd">
+                                                            <rect key="frame" x="45" y="103" width="250" height="2"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgW-Cz-GGk">
+                                                    <rect key="frame" x="41" y="375" width="148" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.18823529410000001" green="0.72549019609999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="15"/>
+                                                    <state key="normal" title="SIGN IN">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnSignInClicked:" destination="-1" eventType="touchUpInside" id="8Ke-cc-K1c"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxo-LP-kDE">
+                                                    <rect key="frame" x="200" y="386" width="136" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                    <state key="normal" title="Forgot Password?">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnForgotPasswordClicked:" destination="-1" eventType="touchUpInside" id="pyT-S8-tzf"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or sign up with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocz-I1-cAO">
+                                                    <rect key="frame" x="87" y="455" width="201" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BD9-xK-FhA" userLabel="vwGoogle">
+                                                    <rect key="frame" x="40" y="510" width="143" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginWithG+" translatesAutoresizingMaskIntoConstraints="NO" id="5Ed-vV-jOF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="143" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IconGooglePlus" translatesAutoresizingMaskIntoConstraints="NO" id="gCN-BV-tzw">
+                                                            <rect key="frame" x="25" y="13" width="20" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GOOGLE+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpM-VD-ort">
+                                                            <rect key="frame" x="47" y="10" width="84" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJx-iR-Zto">
+                                                            <rect key="frame" x="0.0" y="0.0" width="143" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="btnSignUpWithGoogleClicked:" destination="-1" eventType="touchUpInside" id="SRy-D0-j83"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTR-mZ-cr7" userLabel="vwFacebook">
+                                                    <rect key="frame" x="192" y="510" width="143" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginWithFB" translatesAutoresizingMaskIntoConstraints="NO" id="u9Z-qe-XXk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="143" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IconFBSignUp" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-RY-Cgo">
+                                                            <rect key="frame" x="22" y="13" width="7" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FACEBOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v26-Je-3tb">
+                                                            <rect key="frame" x="37" y="10" width="86" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfR-ns-5JV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="143" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="btnSignUpWithFBClicked:" destination="-1" eventType="touchUpInside" id="5Iz-rv-1fT"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-2w-NhU">
+                                                    <rect key="frame" x="41" y="589" width="295" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                    <state key="normal" title="New User? Register Now">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnSignUpClicked:" destination="-1" eventType="touchUpInside" id="a53-0f-nPu"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="CLg-nQ-xbg" firstAttribute="leading" secondItem="nNQ-3C-5d5" secondAttribute="leading" id="Iq8-Bg-4pI"/>
+                                                <constraint firstItem="CLg-nQ-xbg" firstAttribute="top" secondItem="nNQ-3C-5d5" secondAttribute="top" id="V7D-rk-j5m"/>
+                                            </constraints>
+                                        </view>
+                                        <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLl-qz-QhU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pe3-ZR-RBg">
+                                            <rect key="frame" x="15" y="157" width="345" height="352"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset your Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-Sp-12D">
+                                                    <rect key="frame" x="10" y="31" width="325" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="28"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-KB-caa">
+                                                    <rect key="frame" x="1" y="86" width="344" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">It's often forgotten that password thing. Enter your email address below and click on the "Request Password Reset" button. We will contact you shortly !</string>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mail_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="EFF-0C-xyE">
+                                                    <rect key="frame" x="44" y="191" width="16" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqH-cD-oiG">
+                                                    <rect key="frame" x="68" y="189" width="232" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                </textField>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqU-11-rQ7">
+                                                    <rect key="frame" x="68" y="222" width="232" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zo-kE-oaY">
+                                                    <rect key="frame" x="25" y="272" width="295" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.18823529410000001" green="0.72549019609999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                    <state key="normal" title="REQUEST PASSWORD RESET">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnRequestPasswordResetClicked:" destination="-1" eventType="touchUpInside" id="gre-4b-Rac"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlw-AO-b7Z">
+                                            <rect key="frame" x="15" y="124" width="345" height="430"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset your Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrA-c4-X5v">
+                                                    <rect key="frame" x="11" y="36" width="325" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="28"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter PIN that we have sent you in your registered Email address." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iF-a3-WiJ">
+                                                    <rect key="frame" x="1" y="80" width="344" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xkf-se-5oU">
+                                                    <rect key="frame" x="66" y="131" width="212" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="valuechangeTextPin:" destination="-1" eventType="editingChanged" id="WtY-62-SCf"/>
+                                                    </connections>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJJ-mE-Atj">
+                                                    <rect key="frame" x="66" y="159" width="212" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now you can Enter new password." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQd-KM-Qga">
+                                                    <rect key="frame" x="0.0" y="176" width="344" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SAy-WM-iPr">
+                                                    <rect key="frame" x="66" y="233" width="212" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqZ-nT-wZA">
+                                                    <rect key="frame" x="66" y="261" width="212" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBr-lN-Ga4">
+                                                    <rect key="frame" x="66" y="281" width="212" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLM-KI-u7Z">
+                                                    <rect key="frame" x="66" y="309" width="212" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYl-kT-Ylk">
+                                                    <rect key="frame" x="25" y="343" width="295" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.18823529410000001" green="0.72549019609999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                    <state key="normal" title="SET NEW PASSWORD">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnSetPassClicked:" destination="-1" eventType="touchUpInside" id="ySd-ig-s9S"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmE-fi-RBT">
+                                                    <rect key="frame" x="4" y="4" width="38" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="BackButton"/>
+                                                    <connections>
+                                                        <action selector="btnPopUpBackClicked:" destination="-1" eventType="touchUpInside" id="Kkw-mT-sJ3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="nNQ-3C-5d5" firstAttribute="top" secondItem="fB1-Jx-ryq" secondAttribute="top" id="0ze-oH-hRe"/>
+                                        <constraint firstAttribute="bottom" secondItem="nNQ-3C-5d5" secondAttribute="bottom" id="NPd-DH-0HA"/>
+                                        <constraint firstAttribute="trailing" secondItem="nNQ-3C-5d5" secondAttribute="trailing" id="QdF-6n-rpq"/>
+                                        <constraint firstItem="nNQ-3C-5d5" firstAttribute="leading" secondItem="fB1-Jx-ryq" secondAttribute="leading" id="aT3-hx-9dq"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="fB1-Jx-ryq" firstAttribute="top" secondItem="4yP-Sr-h3m" secondAttribute="top" id="6j1-Q8-Q8S"/>
+                                <constraint firstAttribute="bottom" secondItem="fB1-Jx-ryq" secondAttribute="bottom" id="IXc-ym-mpl"/>
+                                <constraint firstItem="fB1-Jx-ryq" firstAttribute="width" secondItem="4yP-Sr-h3m" secondAttribute="width" id="bAs-ki-fog"/>
+                                <constraint firstItem="fB1-Jx-ryq" firstAttribute="leading" secondItem="4yP-Sr-h3m" secondAttribute="leading" id="c70-Ul-JtL"/>
+                                <constraint firstAttribute="trailing" secondItem="fB1-Jx-ryq" secondAttribute="trailing" id="dep-hH-ypY"/>
+                                <constraint firstItem="fB1-Jx-ryq" firstAttribute="height" secondItem="4yP-Sr-h3m" secondAttribute="height" id="vgg-HU-lKZ"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4yP-Sr-h3m" firstAttribute="top" secondItem="7fG-bJ-Uw4" secondAttribute="top" id="M6O-9J-b27"/>
+                        <constraint firstAttribute="trailing" secondItem="4yP-Sr-h3m" secondAttribute="trailing" id="d5D-vy-Cl7"/>
+                        <constraint firstItem="4yP-Sr-h3m" firstAttribute="leading" secondItem="7fG-bJ-Uw4" secondAttribute="leading" id="vMN-9m-3xH"/>
+                        <constraint firstAttribute="bottom" secondItem="4yP-Sr-h3m" secondAttribute="bottom" id="xh3-eN-BrJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7fG-bJ-Uw4" secondAttribute="trailing" id="4L3-Hh-N25"/>
+                <constraint firstItem="7fG-bJ-Uw4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OAy-Cw-ebi"/>
+                <constraint firstAttribute="bottom" secondItem="7fG-bJ-Uw4" secondAttribute="bottom" id="n6O-vb-VK1"/>
+                <constraint firstItem="7fG-bJ-Uw4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nIL-LA-8t2"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackArrow" width="19" height="12.5"/>
+        <image name="BackButton" width="20" height="13.5"/>
+        <image name="Divider" width="212" height="1"/>
+        <image name="IconFBSignUp" width="7" height="14.5"/>
+        <image name="IconGooglePlus" width="19.5" height="15"/>
+        <image name="LoginWithFB" width="295" height="41.5"/>
+        <image name="LoginWithG+" width="295" height="41.5"/>
+        <image name="Mail_Logo" width="13" height="9"/>
+        <image name="PasswordLogo" width="11" height="14"/>
+        <image name="SplashBG" width="750" height="1334"/>
+        <image name="UsernameLogo" width="12" height="15"/>
+        <image name="imgLogoCiyaShop" width="211.5" height="80"/>
+    </resources>
+</document>

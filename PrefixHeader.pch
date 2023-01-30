@@ -1,0 +1,251 @@
+//
+//  PrefixHeader.pch
+//  QuickClick
+//
+//  Created by Umesh on 4/14/17.
+//  Copyright © 2017 Potenza. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AppDelegate.h"
+#import "Util.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "FaceBookHelper.h"
+#import "HCSStarRatingView.h"
+#import "NoticationVC.h"
+#import "SearchVC.h"
+
+#import "MCLocalization.h"
+#import "UIImageView+WebCache.h"
+
+#import "Util.h"
+#import "AppDelegate.h"
+#import "FaceBookHelper.h"
+
+#import "AddToCartData.h"
+#import "WebViewVC.h"
+#import "TimerHelper.h"
+#import "AboutSellerVC.h"
+#import "SellerInfoVC.h"
+#import "VideoVC.h"
+#import "VariationVC.h"
+#import "SigninVC.h"
+
+#import "Product.h"
+
+#import "CiyaShop-Swift.h"
+
+#import <CiyaShopSecurityFramework/CiyaShopSecurityFramework.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define appNAME                 @"CiyaShop"
+
+#pragma mark - API key and Links
+
+//===================================================================
+//Copy and paste URL and key below from Admin Panel
+
+#define OAUTH_CUSTOMER_KEY @"ck_7cee9f91bd46269cf55cf400ee74844c4ed4457f"
+#define OAUTH_CUSTOMER_SERCET @"cs_f3ae31753900410b0d52d25baaff37372c1f4b8e"
+
+#define OAUTH_CONSUMER_KEY_PLUGIN @"lYBm2J1NPicu"
+#define OAUTH_CONSUMER_SECRET_PLUGIN @"pSshHqD0u9LyY2s8qVlIl2FSuFwK7CPsUscrn75cxvSLgvzc"
+#define OAUTH_TOKEN_PLUGIN @"ceiU1ILUwb8qBxptdsgG7dZ3"
+#define OAUTH_TOKEN_SECRET_PLUGIN @"pxPuA0xFUV2NkULCpVDq9ag0ysbOsW5SGCV9zw1zjsCbhzWp"
+
+#define appURL @"https://sahim.nucleussoft.xyz/"
+#define PATH appURL@"wp-json/wc/v2/"
+#define OTHER_API_PATH appURL@"wp-json/pgs-woo-api/v1/"
+#define PLUGIN_VERSION @"3.1.9.1"
+
+//===================================================================
+
+#define MOBILE_COUNTRY_CODE @"+973"          //Country code where your WA number resides
+
+#define DEEP_LINK_DOMAIN @"https://example.page.link"               //Deep_link Domain from FIREBASE
+#define APPLE_APP_STORE_ID @""             //Your app's App Store ID
+#define APPLE_APP_VERSION @"1.0"           //minimum sdk version of app for deep link
+
+#define ANDROID_PACKAGE_NAME @""           //Deep_link package for Android
+#define PLAYSTORE_MINIMUM_VERSION @"1"     //minimum sdk version of playstore for deep link
+
+#define IS_DOWNLOADABLE @"0"               //Download tab is enable when 1 and hidden when 0 in Account page
+
+#define IS_SHIMMER_LOADER true             //Check Shimmer loader true or false.
+#define IS_OTP_ENABLE true                //Check OTP is enable or not in Google Account
+
+#define IS_FROM_STATIC_DATA false          //Check Static data for intro slider, login, infinite scroll
+
+#define IS_INFINITE_SCROLL true            //Check infinite scroll if IS_FROM_STATIC is true
+#define IS_INTRO_SLIDER true               //Check intro slider if IS_FROM_STATIC is true
+#define IS_LOGIN true                      //Check login if IS_FROM_STATIC is true
+#define IS_ADD_TO_CART true                //Check Add to cart button enable if IS_FROM_STATIC is true
+#define IS_CATALOG_MODE true
+//Check Catalog Mode enable
+
+//===================================================================
+// Do not change following code
+//===================================================================
+
+#define FBSEARCH_CONTENT_TYPE @"Shopping"
+
+#ifdef PLUGIN_VERSION
+#define PLUGIN_VERSION1 PLUGIN_VERSION
+#else
+#define PLUGIN_VERSION1 @""
+#endif
+
+#pragma mark - Alert AppDelegate and Status bar
+
+#define ALERTVIEW(MSG,VC) [Util showalert:MSG onView:VC];
+#define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define statusBarSize [UIApplication sharedApplication].statusBarFrame.size
+
+#pragma mark - UI Color Set
+
+//color setting for design purpose
+#define fromServer @"1"                                        //1 then from server else 0 then from pch
+#define color [UIColor whiteColor]
+#define SearchBG [UIColor blackColor]
+#define titleColor @"04D39F"          //[UIColor colorWithRed:96.0/255.0 green:167.0/255.0 blue:39.0/255.0 alpha:1.0]
+#define titleSecodary @"04D39F"          //[UIColor colorWithRed:96.0/255.0 green:167.0/255.0 blue:39.0/255.0 alpha:1.0]
+#define titleHeader @"04D39F"          //[UIColor colorWithRed:96.0/255.0 green:167.0/255.0 blue:39.0/255.0 alpha:1.0]
+
+#define DistanceForLocationUpdate @"500" //minimum distance in meters
+
+#define OtherTitleColor [UIColor whiteColor]
+#define dealofTheDayColor [UIColor colorWithRed:26.0/255.0 green:26.0/255.0 blue:26.0/255.0 alpha:1.0] // not used
+#define tabSelectionColor [UIColor whiteColor] // not used
+#define FontColorGray [UIColor grayColor]
+#define FilterColor [UIColor whiteColor]
+#define FontColorLightGray  [UIColor lightGrayColor]
+#define LightBlackColor [UIColor colorWithRed:50.0/255.0 green:50.0/255.0 blue:50.0/255.0 alpha:1.0]
+#define BorderColor [UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:235.0/255.0 alpha:1.0]
+#define LineSeperator  [UIColor lightGrayColor]
+
+
+
+#pragma mark - Screen Size and Scale
+
+#define SCREEN_SCALE [UIScreen mainScreen].scale
+#define SCREEN_SIZE [[[[UIApplication sharedApplication] keyWindow] rootViewController].view convertRect:[[UIScreen mainScreen] bounds] fromView:nil].size
+
+
+#pragma mark - Show and Hide Activity Indicator
+
+#define SHOW_ACTIVITE_INDICATOR [UIApplication sharedApplication].networkActivityIndicatorVisible = YES; //not used
+#define HIDE_ACTIVITE_INDICATOR [UIApplication sharedApplication].networkActivityIndicatorVisible = NO; //not used
+#define SHOW_PROGRESS(v)    [MRProgressOverlayView showOverlayAddedTo:[[UIApplication sharedApplication] keyWindow] title: [NSString stringWithFormat:@"%@..", v] mode:MRProgressOverlayViewModeIndeterminateSmall animated:YES] //not used
+
+#define SHOW_PROGRESS_WITH_STATUS(v) [MRProgressOverlayView showOverlayAddedTo:[[UIApplication sharedApplication] keyWindow] title:v mode:MRProgressOverlayViewModeDeterminateHorizontalBar animated:YES]; //not used
+#define SHOW_LOADER_ANIMTION() [Util ShowLoader];
+#define HIDE_PROGRESS [Util hide];
+
+#define SHOW_LOADER_ANIMTION_1(v) [Util ShowLoader:v];
+#define HIDE_PROGRESS_1(v) [Util hide:v];
+
+#pragma mark - Font Size Values
+
+#define Font_Size_Product_Name_Small [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizeProductNameSmall]
+#define Font_Size_Product_Name_Not_Bold [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizeProductName]
+#define Font_Size_Product_Name [UIFont fontWithName:@"Ubuntu-Bold" size:appDelegate.FontSizeProductName]
+#define Font_Size_Title [UIFont fontWithName:@"Ubuntu-Bold" size:appDelegate.FontSizeProductTitle]
+#define Font_Size_Price [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePrice]
+#define Font_Size_Price_Sale [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSale]
+#define Font_Size_Price_Sale_Yes [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSaleYes]
+#define Font_Size_Price_Sale_Small [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSaleSmall]
+#define Font_Size_Price_Sale_Yes_Small [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSaleYesSmall]
+
+//For Title's on home page
+#define Font_Size_Title [UIFont fontWithName:@"Ubuntu-Bold" size:appDelegate.FontSizeProductTitle]
+#define Font_Size_Title_Not_Bold [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizeProductTitle]
+
+//For Navigation Title
+#define Font_Size_Navigation_Title [UIFont fontWithName:@"Ubuntu-Bold" size:appDelegate.FontSizeNavigationTitle]
+#define Font_Size_Navigation_Title_Not_Bold [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizeNavigationTitle]
+#define Font_Size_Navigation_Title_Medium [UIFont fontWithName:@"Ubuntu-Medium" size:appDelegate.FontSizeNavigationTitle]
+
+//ProductName Regular
+#define Font_Size_Product_Name_Small_Regular [UIFont fontWithName:@"Ubuntu-Regular" size:appDelegate.FontSizeProductNameSmall]
+
+//ProductName small
+#define Font_Size_Product_Name_Small [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizeProductNameSmall]
+
+//ProductName
+#define Font_Size_Product_Name [UIFont fontWithName:@"Ubuntu-Bold" size:appDelegate.FontSizeProductName]
+//ProductName Not bold
+#define Font_Size_Product_Name_Not_Bold [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizeProductName]
+#define Font_Size_Product_Name_Medium [UIFont fontWithName:@"Ubuntu-Medium" size:appDelegate.FontSizeProductName]
+
+//ProductName Regular
+#define Font_Size_Product_Name_Regular [UIFont fontWithName:@"Ubuntu-Regular" size:appDelegate.FontSizeProductName]
+
+#define Font_Size_Price [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePrice]
+
+//Product Price Regular
+#define Font_Size_Price_Sale [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSale]
+#define Font_Size_Price_Sale_Yes [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSaleYes]
+#define Font_Size_Price_Sale_Yes_Bold [UIFont fontWithName:@"Ubuntu-Bold" size:appDelegate.FontSizePriceSaleYes]
+#define Font_Size_Price_Sale_Bold [UIFont fontWithName:@"Ubuntu-Bold" size:appDelegate.FontSizePriceSale]
+#define Font_Size_Price_Sale_Yes_Regular [UIFont fontWithName:@"Ubuntu-Regular" size:appDelegate.FontSizePriceSaleYes]
+
+
+//Product Price Small
+#define Font_Size_Price_Sale_Small [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSaleSmall]
+#define Font_Size_Price_Sale_Small_Bold [UIFont fontWithName:@"Ubuntu-Medium" size:appDelegate.FontSizePriceSaleSmall]
+#define Font_Size_Price_Sale_Yes_Small [UIFont fontWithName:@"Ubuntu" size:appDelegate.FontSizePriceSaleYesSmall]
+#define Font_Size_Big_Title [UIFont fontWithName:@"Ubuntu-Medium" size:appDelegate.FontSizeBigTitle]
+
+#pragma mark - Attributes for Product
+
+// it should be in Ascending order and should be same text and case as in WooCommerce
+#define DeepLinkData @"DeepLinkData"
+
+#define kFirstTime @"FirstTime"
+#define kGoogleData @"GoogleID"
+#define kUserID @"UserID"
+#define kEmail @"Email"
+#define kUsername @"Username"
+#define kPassword @"Password"
+#define kFname @"FirstName"
+#define kLname @"LastName"
+#define kLogin @"Loggedin"
+#define kFromFBorGoogle @"FBorGoogle"
+#define kLoggedIn @"LoggedIn"
+#define kLoggedOut @"Not LoggedIn"
+#define kPin @"Pin"
+#define kWishList @"WishList"
+#define kRecentItem @"RecentlyViewedItem"
+#define kMyCart @"MyCart"
+#define kBuyNow @"BuyNow"
+#define kSearchedString @"SearchedString"
+#define kRefresh @"Refresh"
+#define kDeviceToken @"DeviceToken"
+#define kLanguaageSet @"LanguaageSet"
+
+#define kAppNameImage @"AppNameImage"
+#define kAppNameWhiteImage @"AppNameWhiteImage"
+
+#define kNotification @"NotificationOnOrOff"
+
+#define kPrimaryColor @"PrimaryColor"
+#define kSecondaryColor @"SecondaryColor"
+#define kHeaderColor @"HeaderColor"
+
+#define kCurrency @"Currency"
+#define kCurrencyText @"CurrencyText"
+
+#define kLanguage @"Language"
+#define kLanguageText @"LanguageText"
+
+#define kFbAbandonedCartObject @"FbAbandoned_cart_object"
+#define kFbAbandonedCartTime @"FbAbondoned_cart_time"
+
+#define kPlaceholderText @"placeholder"
+
+#endif /* PrefixHeader_pch */
+
